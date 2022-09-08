@@ -1,0 +1,1 @@
+from pygtkcompat import enable as enable, enable_goocanvas as enable_goocanvas, enable_gst as enable_gst, enable_gtk as enable_gtk, enable_gudev as enable_gudev, enable_poppler as enable_poppler, enable_vte as enable_vte, enable_webkit as enable_webkit

@@ -1,0 +1,16 @@
+from ._gi import PyGIWarning as PyGIWarning, Repository as Repository, RepositoryError as RepositoryError
+from .module import get_introspection_module as get_introspection_module
+from .overrides import load_overrides as load_overrides
+from _typeshed import Incomplete
+
+repository: Incomplete
+modules: Incomplete
+
+def get_import_stacklevel(import_hook): ...
+
+class DynamicImporter:
+    path: Incomplete
+    def __init__(self, path) -> None: ...
+    def find_spec(self, fullname, path: Incomplete | None = ..., target: Incomplete | None = ...): ...
+    def find_module(self, fullname, path: Incomplete | None = ...): ...
+    def load_module(self, fullname): ...
