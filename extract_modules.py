@@ -15,6 +15,7 @@ def stub(module_name):
     r.redo(module_name, True)
     r.flush()
     
+stub('gi.repository.GLib')
 stub('gi.repository.Gimp')
 stub('gi.repository.GimpUi')
 stub('gi.repository.Gtk')
@@ -22,7 +23,14 @@ stub('gi.repository.Gdk')
 stub('gi.repository.GdkPixbuf')
 stub('gi.repository.GExiv2')
 stub('gi.repository.Gio')
-stub('gi.repository.GLib')
 stub('gi.repository.GObject')
 stub('gi.repository.Pango')
+stub('gi.repository.Gegl')
+stub('gi.repository.freetype2')
+stub('gi.repository.cairo')
+stub('gi.repository.Babl')
+stub('gi.repository.GModule')
+stub('gi.repository.fontconfig')
+stub('gi.repository.Atk')
+
 
