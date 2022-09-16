@@ -1,0 +1,630 @@
+<!--
+SPDX-FileCopyrightText: 2021 GNOME Foundation
+
+SPDX-License-Identifier: Apache-2.0 OR GPL-3.0-or-later
+-->
+
+<!--
+SPDX-FileCopyrightText: 2021 GNOME Foundation
+
+SPDX-License-Identifier: Apache-2.0 OR GPL-3.0-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gimp.ProcedureConfig</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+  <meta property="og:image:width" content="256"/>
+  <meta property="og:image:height" content="256"/>
+  <meta property="og:image:secure_url" content="../images/gimp-devel-logo.png"/>
+  <meta property="og:image:alt" content="Gimp-3.0"/>
+  
+
+  
+  <meta property="og:title" content="Gimp.ProcedureConfig"/>
+  <meta property="og:description" content="Reference for Gimp.ProcedureConfig"/>
+  <meta name="twitter:title" content="Gimp.ProcedureConfig"/>
+  <meta name="twitter:description" content="Reference for Gimp.ProcedureConfig"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      <div class="section">
+        <img src="../images/gimp-devel-logo.png" class="logo"/>
+      </div>
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index.html">Gimp</a></h3>
+        <p>API Version: 3.0</p>
+        
+        <p>Library Version: 2.99.13</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a class="current" href="class.ProcedureConfig.html#description">ProcedureConfig</a>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="section">
+  <h5>Instance methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.ProcedureConfig.begin_export.html">begin_export</a>
+  
+    <a class="method" href="method.ProcedureConfig.begin_run.html">begin_run</a>
+  
+    <a class="method" href="method.ProcedureConfig.end_export.html">end_export</a>
+  
+    <a class="method" href="method.ProcedureConfig.end_run.html">end_run</a>
+  
+    <a class="method" href="method.ProcedureConfig.get_procedure.html">get_procedure</a>
+  
+    <a class="method" href="method.ProcedureConfig.get_values.html">get_values</a>
+  
+    <a class="method" href="method.ProcedureConfig.save_metadata.html">save_metadata</a>
+  
+    <a class="method" href="method.ProcedureConfig.set_values.html">set_values</a>
+  
+  </div>
+</div>
+
+
+
+<div class="section">
+  <h5>Properties</h5>
+  <div class="links">
+  
+    <a class="property" href="property.ProcedureConfig.procedure.html">procedure</a>
+  
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+    </nav>
+    
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Class</h3>
+    <h1 aria-label="Name"><a href="index.html">Gimp</a><span class="sep" role="presentation"></span>ProcedureConfig</h1>
+  </header>
+
+  <section>
+    <summary>
+      <div class="toggle-wrapper">
+        <h4 id="description" style="display:flex;">
+          Description
+          <a href="#description" class="anchor"></a>
+          
+          <a class="srclink" title="go to source location" href="https://gitlab.gnome.org/GNOME/gimp/-/blob/master/libgimp/gimpprocedureconfig.c#L30">[src]</a>
+          
+        </h4>
+
+        <pre><code>abstract class Gimp.ProcedureConfig : GObject.Object {
+  parent_instance: GObject,
+  priv: GimpProcedureConfigPrivate*
+}</pre></code>
+
+        <div class="docblock">
+          <p>The base class for <a href="class.Procedure.html"><code>GimpProcedure</code></a> specific config objects and the main
+interface to manage aspects of <a href="class.Procedure.html"><code>GimpProcedure</code></a>&#8216;s arguments such as
+persistency of the last used arguments across <span class="caps">GIMP</span>&nbsp;sessions.</p>
+<p>A procedure config is created by a <a href="class.Procedure.html"><code>GimpProcedure</code></a> using
+<a href="method.Procedure.create_config.html"><code>gimp_procedure_create_config()</code></a> and its properties match the
+procedure&#8217;s arguments and auxiliary arguments in number, order and&nbsp;type.</p>
+<p>It implements the <a href="struct.Config.html"><code>GimpConfig</code></a> interface and therefore has all its
+serialization and deserialization&nbsp;features.</p>
+        </div>
+
+        <div class="docblock">
+          <table class="attributes">
+            
+            
+            <tr><td>Available since:</td><td>3.0</td></tr>
+            
+            
+          </table>
+        </div>
+
+        
+      </div>
+    </summary>
+
+    
+    <div class="toggle-wrapper hierarchy">
+      <h4 id="hierarchy">
+        Hierarchy
+        <a href="#hierarchy" class="anchor"></a>
+      </h4>
+      <div class="docblock" alt="Hierarchy for Gimp.ProcedureConfig">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: hierarchy Pages: 1 -->
+<svg width="147pt" height="116pt"
+ viewBox="0.00 0.00 147.00 116.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 112)">
+<title>hierarchy</title>
+<!-- this -->
+<g id="node1" class="node">
+<title>this</title>
+<g id="a_node1"><a xlink:title="GimpProcedureConfig">
+<path fill="none" stroke="black" d="M127,-36C127,-36 12,-36 12,-36 6,-36 0,-30 0,-24 0,-24 0,-12 0,-12 0,-6 6,0 12,0 12,0 127,0 127,0 133,0 139,-6 139,-12 139,-12 139,-24 139,-24 139,-30 133,-36 127,-36"/>
+<text text-anchor="middle" x="69.5" y="-14.3" font-family="Times,serif" font-size="14.00">GimpProcedureConfig</text>
+</a>
+</g>
+</g>
+<!-- ancestor_0 -->
+<g id="node2" class="node">
+<title>ancestor_0</title>
+<g id="a_node2"><a xlink:title="GObject.Object">
+<path fill="none" stroke="black" d="M88.5,-108C88.5,-108 50.5,-108 50.5,-108 44.5,-108 38.5,-102 38.5,-96 38.5,-96 38.5,-84 38.5,-84 38.5,-78 44.5,-72 50.5,-72 50.5,-72 88.5,-72 88.5,-72 94.5,-72 100.5,-78 100.5,-84 100.5,-84 100.5,-96 100.5,-96 100.5,-102 94.5,-108 88.5,-108"/>
+<text text-anchor="middle" x="69.5" y="-86.3" font-family="Times,serif" font-size="14.00">GObject</text>
+</a>
+</g>
+</g>
+<!-- ancestor_0&#45;&#45;this -->
+<g id="edge1" class="edge">
+<title>ancestor_0&#45;&#45;this</title>
+<path fill="none" stroke="black" d="M69.5,-71.7C69.5,-60.85 69.5,-46.92 69.5,-36.1"/>
+</g>
+</g>
+</svg>
+
+      </div>
+    </div>
+    
+
+    
+    <div class="toggle-wrapper ancestors">
+      <h4 id="ancestors">
+        Ancestors
+        <a href="#ancestors" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <ul>
+        
+          
+          <li class="class"><a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a></li>
+          
+        
+        </ul>
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="methods">
+        Instance methods
+        <a href="#methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="method.ProcedureConfig.begin_export.html">gimp_procedure_config_begin_export</a></h6>
+          <div class="docblock">
+            <p>This is a variant of <code>gimp_procedure_config_begin_run()</code> to be used
+by file export procedures using <code>GimpSaveProcedure</code>. It must be
+paired with a call to <code>gimp_procedure_config_end_export()</code> at the end
+of&nbsp;run().</p>
+          </div>
+          <div class="docblock"><p>Available since: 3.0</p></div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.ProcedureConfig.begin_run.html">gimp_procedure_config_begin_run</a></h6>
+          <div class="docblock">
+            <p>Populates <code>config</code> with values for a <code>GimpProcedure</code><span class="quo">&#8216;</span>s run(),
+depending on <code>run_mode</code>.</p>
+          </div>
+          <div class="docblock"><p>Available since: 3.0</p></div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.ProcedureConfig.end_export.html">gimp_procedure_config_end_export</a></h6>
+          <div class="docblock">
+            <p>This is a variant of <code>gimp_procedure_config_end_run()</code> to be used by
+file export procedures using <code>GimpSaveProcedure</code>. It must be paired
+with a call to <code>gimp_procedure_config_begin_export()</code> at the
+beginning of&nbsp;run().</p>
+          </div>
+          <div class="docblock"><p>Available since: 3.0</p></div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.ProcedureConfig.end_run.html">gimp_procedure_config_end_run</a></h6>
+          <div class="docblock">
+            <p>This function is the counterpart of
+<code>gimp_procedure_config_begin_run()</code> and must always be called in
+pairs in a procedure&#8217;s run(), before returning return&nbsp;values.</p>
+          </div>
+          <div class="docblock"><p>Available since: 3.0</p></div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.ProcedureConfig.get_procedure.html">gimp_procedure_config_get_procedure</a></h6>
+          <div class="docblock">
+            <p>This function returns the <code>GimpProcedure</code> which created <code>config</code>, see
+<code>gimp_procedure_create_config()</code>.</p>
+          </div>
+          <div class="docblock"><p>Available since: 3.0</p></div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.ProcedureConfig.get_values.html">gimp_procedure_config_get_values</a></h6>
+          <div class="docblock">
+            <p>Gets the values from <code>config</code><span class="quo">&#8216;</span>s properties and stores them in
+<code>values</code>.</p>
+          </div>
+          <div class="docblock"><p>Available since: 3.0</p></div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.ProcedureConfig.save_metadata.html">gimp_procedure_config_save_metadata</a></h6>
+          <div class="docblock">
+            <p>already called from <code>gimp_procedure_config_end_export()</code>.</p>
+          </div>
+          <div class="docblock"><p>Available since: 3.0</p></div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.ProcedureConfig.set_values.html">gimp_procedure_config_set_values</a></h6>
+          <div class="docblock">
+            <p>Sets the values from <code>values</code> on <code>config</code><span class="quo">&#8216;</span>s&nbsp;properties.</p>
+          </div>
+          <div class="docblock"><p>Available since: 3.0</p></div>
+        </div>
+      
+      </div>
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods"><h5 style="display:block;">Methods inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (43)</h5>
+          <div class="docblock">
+          
+            <div class="docblock">
+              <p>Please see&nbsp;<a class="external" href="javascript:void(0)" data-link="class.Object.html#methods" data-namespace="GObject">GObject</a>&nbsp;for a full list of methods.</em></p>
+            </div>
+          
+          </div>
+        </div>
+        
+      
+
+      
+    </div>
+    
+
+    
+    <div class="toggle-wrapper properties">
+      <h4 id="properties">
+        Properties
+        <a href="#properties" class="anchor"></a>
+      </h4>
+
+      
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="property.ProcedureConfig.procedure.html">Gimp.ProcedureConfig:procedure</a></h6>
+
+          <div class="docblock">
+            No description available.
+          </div>
+
+          
+        </div>
+      
+      </div>
+      
+
+      
+        
+      
+
+      
+
+    </div>
+    
+
+    
+    <div class="signals toggle-wrapper">
+      <h4 id="signals">
+        Signals
+        <a href="#signals" class="anchor"></a>
+      </h4>
+
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals"><h5 style="display:block;">Signals inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (1)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="GObject" data-link="signal.Object.notify.html">GObject.Object::notify</a></h6>
+            <div class="docblock">
+              <p>The notify signal is emitted on an object when one of its properties has
+its value set through g_object_set_property(), g_object_set(), et&nbsp;al.</p>
+            </div>
+            
+          
+          </div>
+        </div>
+        
+      
+
+      
+
+    </div>
+    
+
+    
+    <div class="class toggle-wrapper default-hide">
+      <h4 id="class-struct">
+        Class structure
+        <a href="#class-struct" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <pre><code>struct GimpProcedureConfigClass {
+  GObjectClass parent_class;
+  void (* _gimp_reserved1) (
+void
+  );
+  void (* _gimp_reserved2) (
+void
+  );
+  void (* _gimp_reserved3) (
+void
+  );
+  void (* _gimp_reserved4) (
+void
+  );
+  void (* _gimp_reserved5) (
+void
+  );
+  void (* _gimp_reserved6) (
+void
+  );
+  void (* _gimp_reserved7) (
+void
+  );
+  void (* _gimp_reserved8) (
+void
+  );
+  
+}</code></pre>
+      </div>
+
+      
+      <div class="docblock">
+        <h6>Class members</h6>
+
+        <table class="members">
+        
+        <tr>
+          <td style="vertical-align:top"><code>parent_class</code></td>
+          <td style="vertical-align:top"><pre><code>GObjectClass</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td style="vertical-align:top">No description available.</td>
+        </td>
+        
+        <tr>
+          <td style="vertical-align:top"><code>_gimp_reserved1</code></td>
+          <td style="vertical-align:top"><pre><code>void (* _gimp_reserved1) (
+void
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td style="vertical-align:top">No description available.</td>
+        </td>
+        
+        <tr>
+          <td style="vertical-align:top"><code>_gimp_reserved2</code></td>
+          <td style="vertical-align:top"><pre><code>void (* _gimp_reserved2) (
+void
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td style="vertical-align:top">No description available.</td>
+        </td>
+        
+        <tr>
+          <td style="vertical-align:top"><code>_gimp_reserved3</code></td>
+          <td style="vertical-align:top"><pre><code>void (* _gimp_reserved3) (
+void
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td style="vertical-align:top">No description available.</td>
+        </td>
+        
+        <tr>
+          <td style="vertical-align:top"><code>_gimp_reserved4</code></td>
+          <td style="vertical-align:top"><pre><code>void (* _gimp_reserved4) (
+void
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td style="vertical-align:top">No description available.</td>
+        </td>
+        
+        <tr>
+          <td style="vertical-align:top"><code>_gimp_reserved5</code></td>
+          <td style="vertical-align:top"><pre><code>void (* _gimp_reserved5) (
+void
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td style="vertical-align:top">No description available.</td>
+        </td>
+        
+        <tr>
+          <td style="vertical-align:top"><code>_gimp_reserved6</code></td>
+          <td style="vertical-align:top"><pre><code>void (* _gimp_reserved6) (
+void
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td style="vertical-align:top">No description available.</td>
+        </td>
+        
+        <tr>
+          <td style="vertical-align:top"><code>_gimp_reserved7</code></td>
+          <td style="vertical-align:top"><pre><code>void (* _gimp_reserved7) (
+void
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td style="vertical-align:top">No description available.</td>
+        </td>
+        
+        <tr>
+          <td style="vertical-align:top"><code>_gimp_reserved8</code></td>
+          <td style="vertical-align:top"><pre><code>void (* _gimp_reserved8) (
+void
+  )</code></pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td style="vertical-align:top">No description available.</td>
+        </td>
+        
+        </table>
+      </div>
+      
+    </div>
+    
+
+    
+
+    
+
+  </section>
+</section>
+
+
+    
+<div id="toc" class="toc">
+  <nav aria-labelledby="toc-title">
+    <p id="toc-title">Content</p>
+    <ul class="toc-list">
+      <li class="toc-list-item"><a href="#description"><span class="link-text">Description</span></a></li>
+      
+      
+      <li class="toc-list-item"><a href="#hierarchy"><span class="link-text">Hierarchy</span></a></li>
+      
+      
+      <li class="toc-list-item"><a href="#ancestors"><span class="link-text">Ancestors</span></a></li>
+      
+      
+      
+
+      
+
+      
+<li class="toc-list-item"><a href="#methods"><span class="link-text">Methods</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#properties"><span class="link-text">Properties</span></a></li>
+
+
+      
+
+      
+
+      
+
+    </ul>
+  </nav>
+</div>
+
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,448 @@
+<!--
+SPDX-FileCopyrightText: 2021 GNOME Foundation
+
+SPDX-License-Identifier: Apache-2.0 OR GPL-3.0-or-later
+-->
+
+<!--
+SPDX-FileCopyrightText: 2021 GNOME Foundation
+
+SPDX-License-Identifier: Apache-2.0 OR GPL-3.0-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gimp.Unit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+  <meta property="og:image:width" content="256"/>
+  <meta property="og:image:height" content="256"/>
+  <meta property="og:image:secure_url" content="../images/gimp-devel-logo.png"/>
+  <meta property="og:image:alt" content="Gimp-3.0"/>
+  
+
+  
+  <meta property="og:title" content="Gimp.Unit"/>
+  <meta property="og:description" content="Reference for Gimp.Unit"/>
+  <meta name="twitter:title" content="Gimp.Unit"/>
+  <meta name="twitter:description" content="Reference for Gimp.Unit"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      <div class="section">
+        <img src="../images/gimp-devel-logo.png" class="logo"/>
+      </div>
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index.html">Gimp</a></h3>
+        <p>API Version: 3.0</p>
+        
+        <p>Library Version: 2.99.13</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a class="current" href="class.Unit.html#description">Unit</a>
+  </div>
+</div>
+
+
+<div class="section">
+  <h5>Constructors</h5>
+  <div class="links">
+  
+    <a class="ctor" href="ctor.Unit.new.html">new</a>
+  
+  </div>
+</div>
+
+
+
+<div class="section">
+  <h5>Functions</h5>
+  <div class="links">
+  
+    <a class="func" href="type_func.Unit.format_string.html">format_string</a>
+  
+    <a class="func" href="type_func.Unit.get_number_of_built_in_units.html">get_number_of_built_in_units</a>
+  
+    <a class="func" href="type_func.Unit.get_number_of_units.html">get_number_of_units</a>
+  
+  </div>
+</div>
+
+
+
+<div class="section">
+  <h5>Instance methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.Unit.get_abbreviation.html">get_abbreviation</a>
+  
+    <a class="method" href="method.Unit.get_deletion_flag.html">get_deletion_flag</a>
+  
+    <a class="method" href="method.Unit.get_digits.html">get_digits</a>
+  
+    <a class="method" href="method.Unit.get_factor.html">get_factor</a>
+  
+    <a class="method" href="method.Unit.get_identifier.html">get_identifier</a>
+  
+    <a class="method" href="method.Unit.get_plural.html">get_plural</a>
+  
+    <a class="method" href="method.Unit.get_scaled_digits.html">get_scaled_digits</a>
+  
+    <a class="method" href="method.Unit.get_singular.html">get_singular</a>
+  
+    <a class="method" href="method.Unit.get_symbol.html">get_symbol</a>
+  
+    <a class="method" href="method.Unit.is_metric.html">is_metric</a>
+  
+    <a class="method" href="method.Unit.set_deletion_flag.html">set_deletion_flag</a>
+  
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    </nav>
+    
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Class</h3>
+    <h1 aria-label="Name"><a href="index.html">Gimp</a><span class="sep" role="presentation"></span>Unit</h1>
+  </header>
+
+  <section>
+    <summary>
+      <div class="toggle-wrapper">
+        <h4 id="description" style="display:flex;">
+          Description
+          <a href="#description" class="anchor"></a>
+          
+          <a class="srclink" title="go to source location" href="https://gitlab.gnome.org/GNOME/gimp/-/blob/master/libgimpbase/gimpunit.c#L35">[src]</a>
+          
+        </h4>
+
+        <pre><code>final class Gimp.Unit : GObject.TypeInstance {
+  /* No available fields */
+}</pre></code>
+
+        <div class="docblock">
+          <p>Provides a collection of predefined units and functions for
+creating user-defined&nbsp;units.</p>
+        </div>
+
+        <div class="docblock">
+          <table class="attributes">
+            
+            
+            
+          </table>
+        </div>
+
+        
+      </div>
+    </summary>
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="toggle-wrapper constructors">
+      <h4 id="constructors">
+        Constructors
+        <a href="#constructors" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="ctor.Unit.new.html">gimp_unit_new</a></h6>
+
+          <div class="docblock">
+            <p>Returns the integer <span class="caps">ID</span> of the new <code>GimpUnit</code>.</p>
+          </div>
+
+          
+        </div>
+      
+      </div>
+    </div>
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="type-functions">
+        Functions
+        <a href="#type-functions" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+      <div class="">
+        <h6><a href="type_func.Unit.format_string.html">gimp_unit_format_string</a></h6>
+
+        <div class="docblock">
+          <p>The <code>format</code> string supports the following percent&nbsp;expansions:</p>
+        </div>
+
+        <div class="docblock"><p>Available since: 2.8</p></div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.Unit.get_number_of_built_in_units.html">gimp_unit_get_number_of_built_in_units</a></h6>
+
+        <div class="docblock">
+          <p>Returns the number of <code>GimpUnit</code><span class="quo">&#8216;</span>s which are hardcoded in the unit system
+(UNIT_INCH, UNIT_MM, UNIT_POINT, UNIT_PICA and the two &#8220;pseudo unit&#8221;&nbsp;UNIT_PIXEL).</p>
+        </div>
+
+        
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.Unit.get_number_of_units.html">gimp_unit_get_number_of_units</a></h6>
+
+        <div class="docblock">
+          <p>Returns the number of units which are known to the <code>GimpUnit</code> system.</p>
+        </div>
+
+        
+      </div>
+      
+      </div>
+    </div>
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="methods">
+        Instance methods
+        <a href="#methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="method.Unit.get_abbreviation.html">gimp_unit_get_abbreviation</a></h6>
+          <div class="docblock">
+            <p>For built-in units, this function returns the translated abbreviation
+of the&nbsp;unit.</p>
+          </div>
+          
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Unit.get_deletion_flag.html">gimp_unit_get_deletion_flag</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Unit.get_digits.html">gimp_unit_get_digits</a></h6>
+          <div class="docblock">
+            <p>Returns the number of digits set for <code>unit</code>.
+Built-in units&#8217; accuracy is approximately the same as an inch with
+two digits. User-defined units can suggest a different&nbsp;accuracy.</p>
+          </div>
+          
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Unit.get_factor.html">gimp_unit_get_factor</a></h6>
+          <div class="docblock">
+            <p>A <code>GimpUnit</code><span class="quo">&#8216;</span>s <code>factor</code> is defined to&nbsp;be:</p>
+          </div>
+          
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Unit.get_identifier.html">gimp_unit_get_identifier</a></h6>
+          <div class="docblock">
+            <p>This is an untranslated string and must not be changed or&nbsp;freed.</p>
+          </div>
+          
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Unit.get_plural.html">gimp_unit_get_plural</a></h6>
+          <div class="docblock">
+            <p>For built-in units, this function returns the translated plural form
+of the unit&#8217;s&nbsp;name.</p>
+          </div>
+          
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Unit.get_scaled_digits.html">gimp_unit_get_scaled_digits</a></h6>
+          <div class="docblock">
+            <p>Returns the number of digits a <code>unit</code> field should provide to get
+enough accuracy so that every pixel position shows a different
+value from neighboring&nbsp;pixels.</p>
+          </div>
+          
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Unit.get_singular.html">gimp_unit_get_singular</a></h6>
+          <div class="docblock">
+            <p>For built-in units, this function returns the translated singular form
+of the unit&#8217;s&nbsp;name.</p>
+          </div>
+          
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Unit.get_symbol.html">gimp_unit_get_symbol</a></h6>
+          <div class="docblock">
+            <p>This is e.g. &#8220;&#8221;&#8221; for&nbsp;UNIT_INCH.</p>
+          </div>
+          
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Unit.is_metric.html">gimp_unit_is_metric</a></h6>
+          <div class="docblock">
+            <p>Checks if the given <code>unit</code> is metric. A simplistic test is used
+that looks at the unit&#8217;s factor and checks if it is 2.54 multiplied
+by some common powers of 10. Currently it checks for mm, cm, dm,&nbsp;m.</p>
+          </div>
+          <div class="docblock"><p>Available since: 2.10</p></div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Unit.set_deletion_flag.html">gimp_unit_set_deletion_flag</a></h6>
+          <div class="docblock">
+            <p>Sets a <code>GimpUnit</code><span class="quo">&#8216;</span>s <code>deletion_flag</code>. If the <code>deletion_flag</code> of a unit is
+<code>TRUE</code> when <span class="caps">GIMP</span> exits, this unit will not be saved in the users&#8217;s
+&#8220;unitrc&#8221;&nbsp;file.</p>
+          </div>
+          
+        </div>
+      
+      </div>
+
+      
+
+      
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </section>
+</section>
+
+
+    
+<div id="toc" class="toc">
+  <nav aria-labelledby="toc-title">
+    <p id="toc-title">Content</p>
+    <ul class="toc-list">
+      <li class="toc-list-item"><a href="#description"><span class="link-text">Description</span></a></li>
+      
+      
+      
+      
+      
+<li class="toc-list-item"><a href="#constructors"><span class="link-text">Constructors</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#type-functions"><span class="link-text">Functions</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#methods"><span class="link-text">Methods</span></a></li>
+
+
+      
+
+      
+
+      
+
+      
+
+    </ul>
+  </nav>
+</div>
+
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+</html>

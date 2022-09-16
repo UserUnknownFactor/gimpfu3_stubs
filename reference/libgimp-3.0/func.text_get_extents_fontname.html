@@ -1,0 +1,366 @@
+<!--
+SPDX-FileCopyrightText: 2021 GNOME Foundation
+
+SPDX-License-Identifier: Apache-2.0 OR GPL-3.0-or-later
+-->
+
+<!--
+SPDX-FileCopyrightText: 2021 GNOME Foundation
+
+SPDX-License-Identifier: Apache-2.0 OR GPL-3.0-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gimp.text_get_extents_fontname</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+  <meta property="og:image:width" content="256"/>
+  <meta property="og:image:height" content="256"/>
+  <meta property="og:image:secure_url" content="../images/gimp-devel-logo.png"/>
+  <meta property="og:image:alt" content="Gimp-3.0"/>
+  
+
+  
+  <meta property="og:title" content="Gimp.text_get_extents_fontname"/>
+  <meta property="og:description" content="Reference for Gimp.text_get_extents_fontname"/>
+  <meta name="twitter:title" content="Gimp.text_get_extents_fontname"/>
+  <meta name="twitter:description" content="Reference for Gimp.text_get_extents_fontname"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      <div class="section">
+        <img src="../images/gimp-devel-logo.png" class="logo"/>
+      </div>
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index.html">Gimp</a></h3>
+        <p>API Version: 3.0</p>
+        
+        <p>Library Version: 2.99.13</p>
+        
+      </div>
+      
+
+<div class="section">
+  <h5>Functions</h5>
+  <div class="links">
+  
+  </div>
+</div>
+
+
+    </nav>
+    
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Function </h3>
+    <h1><a href="index.html">Gimp</a><span class="sep"></span>text_get_extents_fontname</h1>
+  </header>
+
+  <section>
+    <div class="declaration toggle-wrapper">
+      <h4 id="declaration" style="display:flex;">
+        Declaration
+        <a href="#declaration" class="anchor"></a>
+        
+        <a class="srclink" title="go to source location" href="https://gitlab.gnome.org/GNOME/gimp/-/blob/master/libgimp/gimptexttool_pdb.h#L45">[src]</a>
+        
+      </h4>
+
+      <div class="docblock">
+        <pre><code><div class="highlight"><pre><span></span><span class="n">gboolean</span><span class="w"></span>
+<span class="n">gimp_text_get_extents_fontname</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">gchar</span><span class="o">*</span><span class="w"> </span><span class="n">text</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">gdouble</span><span class="w"> </span><span class="n">size</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">GimpSizeType</span><span class="w"> </span><span class="n">size_type</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">gchar</span><span class="o">*</span><span class="w"> </span><span class="n">fontname</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">gint</span><span class="o">*</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">gint</span><span class="o">*</span><span class="w"> </span><span class="n">height</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">gint</span><span class="o">*</span><span class="w"> </span><span class="n">ascent</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">gint</span><span class="o">*</span><span class="w"> </span><span class="n">descent</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</pre></div>
+</code></pre>
+      </div>
+    </div>
+
+    <div class="description toggle-wrapper">
+      <h4 id="description" style="display:flex;">
+        Description
+        <a href="#description" class="anchor"></a>
+        
+        <a class="srclink" title="go to source location" href="https://gitlab.gnome.org/GNOME/gimp/-/blob/master/libgimp/gimptexttool_pdb.c#L114">[src]</a>
+        
+      </h4>
+
+      <div class="docblock">
+        <p>Get extents of the bounding box for the specified&nbsp;text.</p>
+<p>This tool returns the width and height of a bounding box for the
+specified text string with the specified font information. Ascent
+and descent for the specified font are returned as well. Parameter
+size-type is not used and is currently ignored. If you need to
+display a font in points, divide the size in points by 72.0 and
+multiply it by the vertical resolution of the image you are taking
+into&nbsp;account.</p>
+      </div>
+
+      <div class="docblock">
+        <table>
+          
+          
+          
+          
+          
+          
+        </table>
+      </div>
+
+      
+    </div>
+
+    
+    <div class="parameters toggle-wrapper">
+      <h4 id="parameters">
+        Parameters
+        <a href="#parameters" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <table class="arguments">
+          
+          <tr class="arg-name">
+            <td><code>text</code></td>
+            <td><code>const gchar*</code></td>
+          </tr>
+          <tr class="arg-description">
+            <td>&nbsp;</td>
+            <td><p>The text to generate (in <span class="caps">UTF</span>-8&nbsp;encoding).</p></td>
+          </tr>
+          
+          
+          
+          
+          
+          
+          
+          <tr><td>&nbsp;</td><td title="transfer: none">The data is owned by the caller of the function.</td></tr>
+          <tr><td>&nbsp;</td><td>The value is a NUL terminated UTF-8 string.</td></tr>
+          
+          <tr class="arg-name">
+            <td><code>size</code></td>
+            <td><code>gdouble</code></td>
+          </tr>
+          <tr class="arg-description">
+            <td>&nbsp;</td>
+            <td><p>The size of text in either pixels or&nbsp;points.</p></td>
+          </tr>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <tr class="arg-name">
+            <td><code>size_type</code></td>
+            <td><a href="enum.SizeType.html"><code>GimpSizeType</code></a></td>
+          </tr>
+          <tr class="arg-description">
+            <td>&nbsp;</td>
+            <td><p>The units of specified&nbsp;size.</p></td>
+          </tr>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <tr class="arg-name">
+            <td><code>fontname</code></td>
+            <td><code>const gchar*</code></td>
+          </tr>
+          <tr class="arg-description">
+            <td>&nbsp;</td>
+            <td><p>The name of the&nbsp;font.</p></td>
+          </tr>
+          
+          
+          
+          
+          
+          
+          
+          <tr><td>&nbsp;</td><td title="transfer: none">The data is owned by the caller of the function.</td></tr>
+          <tr><td>&nbsp;</td><td>The value is a NUL terminated UTF-8 string.</td></tr>
+          
+          <tr class="arg-name">
+            <td><code>width</code></td>
+            <td><code>gint*</code></td>
+          </tr>
+          <tr class="arg-description">
+            <td>&nbsp;</td>
+            <td><p>The width of the specified&nbsp;font.</p></td>
+          </tr>
+          <tr><td>&nbsp;</td><td title="direction: out">The argument will be set by the function.</td></tr>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <tr class="arg-name">
+            <td><code>height</code></td>
+            <td><code>gint*</code></td>
+          </tr>
+          <tr class="arg-description">
+            <td>&nbsp;</td>
+            <td><p>The height of the specified&nbsp;font.</p></td>
+          </tr>
+          <tr><td>&nbsp;</td><td title="direction: out">The argument will be set by the function.</td></tr>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <tr class="arg-name">
+            <td><code>ascent</code></td>
+            <td><code>gint*</code></td>
+          </tr>
+          <tr class="arg-description">
+            <td>&nbsp;</td>
+            <td><p>The ascent of the specified&nbsp;font.</p></td>
+          </tr>
+          <tr><td>&nbsp;</td><td title="direction: out">The argument will be set by the function.</td></tr>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <tr class="arg-name">
+            <td><code>descent</code></td>
+            <td><code>gint*</code></td>
+          </tr>
+          <tr class="arg-description">
+            <td>&nbsp;</td>
+            <td><p>The descent of the specified&nbsp;font.</p></td>
+          </tr>
+          <tr><td>&nbsp;</td><td title="direction: out">The argument will be set by the function.</td></tr>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        </table>
+      </div>
+    </div>
+    
+
+    
+    <div class="return-value toggle-wrapper">
+      <h4 id="return-value">
+        Return value
+        <a href="#return-value" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <table class="returns">
+          <tr class="arg-name">
+            <td>Returns:</td>
+            <td><code>gboolean</code></td>
+          </tr>
+          <tr class="arg-description">
+            <td>&nbsp;</td>
+            <td><p><span class="caps">TRUE</span> on&nbsp;success.</p></td>
+          </tr>
+          
+          
+          
+          
+          
+          
+        </table>
+      </div>
+    </div>
+    
+  </section>
+</section>
+
+
+    
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+</html>

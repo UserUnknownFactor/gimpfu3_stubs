@@ -1,0 +1,289 @@
+<!--
+SPDX-FileCopyrightText: 2021 GNOME Foundation
+
+SPDX-License-Identifier: Apache-2.0 OR GPL-3.0-or-later
+-->
+
+<!--
+SPDX-FileCopyrightText: 2021 GNOME Foundation
+
+SPDX-License-Identifier: Apache-2.0 OR GPL-3.0-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gimp.ProcedureConfig.begin_run</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+  <meta property="og:image:width" content="256"/>
+  <meta property="og:image:height" content="256"/>
+  <meta property="og:image:secure_url" content="../images/gimp-devel-logo.png"/>
+  <meta property="og:image:alt" content="Gimp-3.0"/>
+  
+
+  
+  <meta priority="og:title" content="Gimp.ProcedureConfig.begin_run"/>
+  <meta priority="og:description" content="Reference for Gimp.ProcedureConfig.begin_run"/>
+  <meta name="twitter:title" content="Gimp.ProcedureConfig.begin_run"/>
+  <meta name="twitter:description" content="Reference for Gimp.ProcedureConfig.begin_run"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      <div class="section">
+        <img src="../images/gimp-devel-logo.png" class="logo"/>
+      </div>
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index.html">Gimp</a></h3>
+        <p>API Version: 3.0</p>
+        
+        <p>Library Version: 2.99.13</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a href="class.ProcedureConfig.html">ProcedureConfig</a>
+  </div>
+</div>
+<div class="section">
+  <h5>Methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.ProcedureConfig.begin_export.html">begin_export</a>
+  
+    <a class="method current" href="method.ProcedureConfig.begin_run.html">begin_run</a>
+  
+    <a class="method" href="method.ProcedureConfig.end_export.html">end_export</a>
+  
+    <a class="method" href="method.ProcedureConfig.end_run.html">end_run</a>
+  
+    <a class="method" href="method.ProcedureConfig.get_procedure.html">get_procedure</a>
+  
+    <a class="method" href="method.ProcedureConfig.get_values.html">get_values</a>
+  
+    <a class="method" href="method.ProcedureConfig.save_metadata.html">save_metadata</a>
+  
+    <a class="method" href="method.ProcedureConfig.set_values.html">set_values</a>
+  
+  </div>
+</div>
+
+    </nav>
+    
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Method</h3>
+    <h1><a href="index.html">Gimp</a><span class="sep"></span><a href="class.ProcedureConfig.html">ProcedureConfig</a><span class="sep"></span>begin_run</h1>
+  </header>
+
+  <section>
+    <div class="declaration toggle-wrapper">
+      <h4 style="display:flex;" id="declaration">
+        Declaration
+        <a class="anchor" href="#declaration"></a>
+        
+        <a class="srclink" title="go to source location" href="https://gitlab.gnome.org/GNOME/gimp/-/blob/master/libgimp/gimpprocedureconfig.h#L78">[src]</a>
+        
+      </h4>
+
+      <div class="docblock c-decl">
+        <pre><code><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"></span>
+<span class="n">gimp_procedure_config_begin_run</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">GimpProcedureConfig</span><span class="o">*</span><span class="w"> </span><span class="n">config</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">GimpImage</span><span class="o">*</span><span class="w"> </span><span class="n">image</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">GimpRunMode</span><span class="w"> </span><span class="n">run_mode</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">GimpValueArray</span><span class="o">*</span><span class="w"> </span><span class="n">args</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</pre></div>
+</code></pre>
+      </div>
+    </div>
+
+    <div class="description toggle-wrapper">
+      <h4 style="display:flex;" id="description">
+        Description
+        <a class="anchor" href="#description"></a>
+        
+        <a class="srclink" title="go to source location" href="https://gitlab.gnome.org/GNOME/gimp/-/blob/master/libgimp/gimpprocedureconfig.c#L436">[src]</a>
+        
+      </h4>
+
+      <div class="docblock">
+        <p>Populates <code>config</code> with values for a <a href="class.Procedure.html"><code>GimpProcedure</code></a>&#8216;s run(),
+depending on <code>run_mode</code>.</p>
+<p>If <code>run_mode</code> is <code>GIMP_RUN_INTERACTIVE</code> or <code>GIMP_RUN_WITH_LAST_VALS</code>,
+the saved values from the procedure&#8217;s last <code>run()</code> are loaded and set
+on <code>config</code>. If <code>image</code> is not <code>NULL</code>, the last used values for this
+image are tried first, and if no image-specific values are found
+the globally saved last used values are used. If no saved last used
+values are found, the procedure&#8217;s default argument values are&nbsp;used.</p>
+<p>If <code>run_mode</code> is <code>GIMP_RUN_NONINTERACTIVE</code>, the contents of <code>args</code> are
+set on <code>config</code> using <a href="method.ProcedureConfig.set_values.html"><code>gimp_procedure_config_set_values()</code></a>.</p>
+<p>After setting <code>config</code><span class="quo">&#8216;</span>s properties like described above, arguments
+and auxiliary arguments are automatically synced from image
+parasites of the same name if they were set to
+<code>GIMP_ARGUMENT_SYNC_PARASITE</code> with&nbsp;Procedure.set_argument_sync:</p>
+<p>String properties are set to the value of the image parasite if
+<code>run_mode</code> is <code>GIMP_RUN_INTERACTIVE</code> or <code>GIMP_RUN_WITH_LAST_VALS</code>, or
+if the corresponding argument is an auxiliary argument. As a
+special case, a property named &#8220;gimp-comment&#8221; will default to
+<a href="func.get_default_comment.html"><code>gimp_get_default_comment()</code></a> if there is no &#8220;gimp-comment&#8221;&nbsp;parasite.</p>
+<p>After calling this function, the <code>args</code> passed to <code>run()</code> should be
+left alone and <code>config</code> be treated as the procedure&#8217;s&nbsp;arguments.</p>
+<p>It is possible to get <code>config</code><span class="quo">&#8216;</span>s resulting values back into <code>args</code> by
+calling <a href="method.ProcedureConfig.get_values.html"><code>gimp_procedure_config_get_values()</code></a>, as long as modified
+<code>args</code> are written back to <code>config</code> using <a href="method.ProcedureConfig.set_values.html"><code>gimp_procedure_config_set_values()</code></a>
+before the call to <a href="method.ProcedureConfig.end_run.html"><code>gimp_procedure_config_end_run()</code></a>.</p>
+<p>This function should be used at the beginning of a procedure&#8217;s
+<code>run()</code> and be paired with a call to <a href="method.ProcedureConfig.end_run.html"><code>gimp_procedure_config_end_run()</code></a>
+at the end of&nbsp;run().</p>
+      </div>
+
+      <div class="docblock">
+        <table>
+          
+          
+          <tr><td>Available since:</td><td>3.0</td></tr>
+          
+          
+          
+          
+          
+        </table>
+      </div>
+
+      
+    </div>
+
+    
+    <div class="parameters toggle-wrapper">
+      <h4 id="parameters">
+        Parameters
+        <a href="#parameters" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <table class="arguments">
+          
+          <tr class="arg-name">
+            <td><code>image</code></td>
+            <td><a href="class.Image.html"><code>GimpImage</code></a></td>
+          </tr>
+          <tr class="arg-description">
+            <td>&nbsp;</td>
+            <td><p>A <code>GimpImage</code> or <code>NULL</code>.</p></td>
+          </tr>
+          
+          <tr><td>&nbsp;</td><td>The argument can be <code>NULL</code>.</td></tr>
+          
+          
+          
+          
+          
+          <tr><td>&nbsp;</td><td title="transfer: none">The data is owned by the caller of the function.</td></tr>
+          
+          
+          <tr class="arg-name">
+            <td><code>run_mode</code></td>
+            <td><a href="enum.RunMode.html"><code>GimpRunMode</code></a></td>
+          </tr>
+          <tr class="arg-description">
+            <td>&nbsp;</td>
+            <td><p>The <code>GimpRunMode</code> passed to a <a href="class.Procedure.html"><code>GimpProcedure</code></a>&#8216;s <code>run()</code></p></td>
+          </tr>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <tr class="arg-name">
+            <td><code>args</code></td>
+            <td><a href="struct.ValueArray.html"><code>GimpValueArray</code></a></td>
+          </tr>
+          <tr class="arg-description">
+            <td>&nbsp;</td>
+            <td><p>The <code>GimpValueArray</code> passed to a <a href="class.Procedure.html"><code>GimpProcedure</code></a>&#8216;s <code>run()</code></p></td>
+          </tr>
+          
+          
+          
+          
+          
+          
+          
+          <tr><td>&nbsp;</td><td title="transfer: none">The data is owned by the caller of the function.</td></tr>
+          
+          
+          
+        </table>
+      </div>
+    </div>
+    
+
+    
+
+  </section>
+</section>
+
+
+    
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+</html>
